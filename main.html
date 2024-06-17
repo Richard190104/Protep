@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProTEP</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="JS.js"></script>
+
+</head>
+
+<body>
+    <div class="nothing" id="nothing" >
+      <div class="contact-container" id="contact-container" style="border: 2px solid rgb(255, 255, 255);">
+       
+       <div class="form-bar" > 
+        
+        <form  action="https://formspree.io/f/moqggnlo"  method="POST" class="form">
+          <div class="client-info">
+            <p  class="ProTepText">Pro<b style="color: red; ">TEP</b></p>
+            <div class="info-row">   
+             
+           <p class="p-style">Meno:   </p>
+            <input type="text" name="Meno" placeholder="..." class="input-contact" required>
+          </div>
+          <div class="info-row"> 
+          <p  class="p-style">Telefón: </p>
+            <input type="text"  name="Telefón" placeholder="..." class="input-contact"  required>
+          </div>
+          </div>
+          <div class="client-message">
+           <div class="info-row"> 
+            <p class="email-text-input">E-mail:   </p>
+            <input type="email" name="Email" placeholder="..." class="input-email" required></div>
+            <textarea name="Správa" placeholder="Napíšte nám" class="input-message"  required></textarea>
+          </div>
+          
+          <div class="buttons">
+            <button type="submit" class="submit-button"> Odoslať</button>
+            <button type="reset" class="submit-button" onclick="slideShow()"> Zrušiť</button>
+          </div>
+      </form>
+    </div>
+      </div>
+        <div class="menu-bar" id="menu-bar">
+            <a href="#home" id="home-section-text"class="button">Domov </a>
+            <a href="#aboutus" id="aboutus-section-text"class="button">O nás </a>
+            <a href="#services"  id="services-section-text"class="button">Služby </a>
+            <a href="#prices"  id="prices-section-text"class="button">Cenník </a>
+            <a href="#contact"  id="contact-section-text"class="button">Kontakt </a>
+            
+          </div>
+        </div>
+    <div id="navbar" class="">
+        <div style="max-width: 1920px; justify-content: space-between; display: flex; padding: 20px 10px;  width: 100%;">
+        <div id="navbar-left">
+        <img src="images/logo.png" id="logo-image">
+        <a href="#default" id="logo" >Pro<b style="color: rgb(156, 8, 16);">TEP</b></a>
+        </div>
+        <div id="navbar-right" >
+            <div class="menu-btn" id="menu-btn" onclick="toggleMenu()">
+                <div class="menu-btn-line line-1"></div>
+                <div class="menu-btn-line line-2"></div>
+                <div class="menu-btn-line line-3"></div>
+                
+              </div>
+          <a href="#home" onclick="underline(this)" id="home-section-text" class="button2">Domov</a>
+          <a href="#aboutus" onclick="underline(this)" id="aboutus-section-text"class="button2">O nás</a>
+          <a href="#services" onclick="underline(this)" id="services-section-text"class="button2">Služby</a>
+          <a href="#prices" onclick="underline(this)" id="prices-section-text"class="button2">Cenník</a>
+          <a href="#contact" onclick="underline(this)" id="contact-section-text"class="button2">Kontakt</a>
+          
+         
+        </div>
+        </div>
+      </div>
+      <section id="home" ></section>
+   <div style=" margin-top: 70px; left: 0; align-items: center; justify-content: center; display: flex; align-items: center;" id="try">
+   
+      <div id="home-page-background" class="section-class blur" >
+   
+      <div id="home-page-false-background"></div>
+        
+        <div id="home-block" class="load">
+            
+                <p id="welcome-text"> Vitajte na stránke Pro<b style="color: rgb(156, 8, 16);">TEP</b></p>
+                <p class="left-side-hometext">
+                  Punúkame Vám profesionálne <b>tepovacie a upratovacie</b> služby za bezkonkurenčné ceny!
+                </p>
+                            
+               <div id="contact-button-box">
+                <div id="contact-button" onclick="slideShow()">
+                <p > Kontaktujte nás</p>
+                       
+                <div class="contact-line" id="contact-line">
+                    <div class="contact-line-vertical"></div>
+                    <div class="contact-line-horizontal"></div>
+                </div>
+                </div>
+               
+                </div>
+            
+            
+        </div>
+</div>  
+</div>
+
+   
+    <section id="aboutus"></section>
+    <div style="width: 100%; justify-content: center; align-items: center; display: flex;">
+
+    </div>
+    <div class="about-us-section load">
+      
+      <div class="content-box">
+                 <div style="display: flex; align-items: center; justify-content: center;">
+                   <h1 style="border-bottom:3px solid rgb(156, 8, 15); color: rgb(75, 72, 72);"> <b>------Niečo o nás------</b></h1>
+                  </div>
+        <div style="display: flex; justify-content: center; align-items: center; margin: 0; padding: 0; font-size: 150%; ">
+        </div>
+        <p>
+          Máte na vašom koberci či nábytku škvrnu, s ktorou si neviete rady? Alebo jednoducho stratili svoj pôvodný lesk a sviežosť?
+          <br>Tak využite naše služby a budete spokojní! <br> <br>
+          Naša misia je jednoduchá: poskytovať služby, ktoré prekračujú očakávania našich zákazníkov.
+          Používame najmodernejšie technológie a ekologicky šetrné čistiace prostriedky.
+          Veríme, že čistota by nemala byť dosiahnutá na úkor zdravia našich zákazníkov ani životného prostredia.
+        </p>
+      
+      </div>
+      <div class="about-us-pictures-container">
+        <div class="gallery-container">    
+              <img src="images/carpets.jpg" alt="Image 1" style=" border-radius: 5px; width: 100%;">
+      </div>
+      <div class="gallery-container">    
+        <img src="images/carpets.jpg" alt="Image 1" style=" border-radius: 5px; width: 100%">
+</div>
+
+      </div>
+</div>
+<br>
+      <section id="services"></section>
+        <div class=" about-us-section load" style="flex-direction: column; overflow: hidden; background-image:url('images/services-background.jpg');">
+         
+          
+            <h1 style="border-bottom: 3px solid rgb(156, 8, 16); margin-bottom: 30px; color: white;">------Ponuka služieb------</h1>
+            <div style="justify-content: center; display: flex; flex-direction: row; align-items: center; max-width: 1920px;">
+          <div class="services-content">
+            
+            <div class=" services-content-box">
+              <div class="image-container"><img src="images/carpets.jpg" class="services-image"> </div>
+              <p class="services-text-p headline"> Tepovanie kobercov</p>
+              <p class="services-text-p">Hĺbkove čistenie kusových a metrážnych kobercov - či už u vás alebo v našich priestoroch. <br><br> My koberec vyzdvihneme, vyčistíme a dovezieme!
+                </p>
+              </div>
+            
+              <div class="services-content-box">
+                <div class="image-container"><img src="images/furniture.jpg" class="services-image"> </div>
+                <p class="services-text-p headline">Tepovanie čalúnenia</p>
+                <p class="services-text-p">
+                  Naša služba profesionálneho tepovania čalúneného nábytku prináša vášmu nábytku novú sviežosť a čistotu. 
+                  <br>Využívame ekologické čistiace prostriedky a pokročilé technológie na efektívne 
+                  odstránenie škvŕn, prachu a alergénov.
+                </p>   
+              </div>
+             
+              <div class=" services-content-box">
+                <div class="image-container"><img src="images/matraces.jpeg" class="services-image"> </div>
+                <p class="services-text-p headline"> Tepovanie matracov</p>
+                <p class="services-text-p">
+                  ahoj ja som paťik
+                  </p>
+                </div>
+
+            </div> 
+          </div>
+
+          <div style="justify-content: center; display: flex; flex-direction: row; align-items: center; max-width: 1920px;">
+            <div class="services-content">
+              
+              <div class=" services-content-box">
+                <div class="image-container"><img src="images/car.jpg" class="services-image"> </div>
+                <p class="services-text-p headline"> Tepovanie auta</p>
+                <p class="services-text-p">Kompletné tepovanie a čistenie interiéru Vášho auta.
+                  </p>
+                </div>
+              
+                <div class="services-content-box">
+                  <div class="image-container"><img src="images/windows.jpg" class="services-image"> </div>
+                  <p class="services-text-p headline">Umývanie okien</p>
+                  <p class="services-text-p">
+                    Umývanie okien, výkladov, okenných sieťok.
+                  </p>   
+                </div>
+               
+                <div class="services-content-box">
+                  <div class="image-container"><img src="images/household.jpg" class="services-image"> </div>
+                  <p class="services-text-p headline">Upratovanie domácností</p>
+                  <p class="services-text-p">
+                    Ponúkame pravidelné upratovanie v požadovanom intervale, jednorázové upratovanie len ako výpomoc, tak aj generálne upratovanie napríklad po maľovaní či rekonštrukcií a podobne.
+                  </p>   
+                </div>
+
+              </div> 
+            </div>
+
+        </div>
+        <section id="prices"></section>
+        <div id="here" style="width: 100%; justify-content: center; align-items: center; display: flex;">
+        <div class="prices-section load" >
+          <h1 style="border-bottom: 3px solid rgb(156, 8, 16); margin-bottom: 30px; font-weight: bolder; color: rgb(179, 178, 178);">------Cenník------</h1>
+         
+          
+          <div class="tepovanie-section">
+            
+            <div style=" justify-content: center; align-items: center; display: flex;"> 
+                <p style="font-size: 180%; color: rgb(179, 178, 178);">Cenník služieb - <br><b style="color: rgb(156, 8, 16);">Tepovanie</b></p>
+            </div>
+            <div style="display: flex; flex-direction: column;  margin: 0px 5px; justify-content: center; align-items: center; min-width: 30%;">
+              <div class="item m2" onclick="toggleChoice(this)" id="Tepovanie metrážnych kobercov"> 
+                <p>Tepovanie metrážnych kobercov</p>
+                <p>Od 2,5€/m2</p>
+
+              </div>
+              <div class="item m2" onclick="toggleChoice(this)" id="Tepovanie kusových kobercov"> 
+                <p id="this">Tepovanie kusových kobercov	</p>
+                <p>Od 3€/m2</p>
+
+              </div>
+              <div class="item ms" onclick="toggleChoice(this)" id="Tepovanie sedačiek"> 
+                <p id="this">Tepovanie sedačiek</p>
+                <p>	Od 10€/miesto sedenia</p>
+
+              </div>
+              <div class="item ks" onclick="toggleChoice(this)" id="Tepovanie kresiel"> 
+                <p id="this">Tepovanie kresiel</p>
+                <p>	Od 15€</p>
+
+              </div>
+              <div class="item ks" onclick="toggleChoice(this)" id="Tepovanie vankúšov"> 
+                <p>Tepovanie vankúšov</p>
+                <p>		Od 3€/ks</p>
+
+              </div>
+              <div class="item sl" onclick="toggleChoice(this)" id="Tepovanie matracov"> 
+                <p>Tepovanie matracov (1 lôžko, 1strana)</p>
+                <p>	Od 10€</p>
+
+              </div>
+            </div>
+  
+  
+            <div  style=" min-width: 30%; display: flex; flex-direction: column;  margin: 0px 5px; justify-content: center; align-items: center;">
+              <div class="item ks" onclick="toggleChoice(this)" id="Tepovanie taburetiek"> 
+                <p>Tepovanie taburetiek	</p>
+                <p>Od 5€/ks</p>
+
+              </div>
+              <div class="item ks" onclick="toggleChoice(this)" id="Tepovanie stoličiek"> 
+                <p>Tepovanie stoličiek</p>
+                <p> 	Od 4€/ks</p>
+
+              </div>
+              <div class="item ks" onclick="toggleChoice(this)" id="Tepovanie čalúnenia postelí"> 
+                <p>Tepovanie čalúnenia postelí</p>
+                <p>	Od 15€</p>
+
+              </div>
+              <div class="item ks" onclick="toggleChoice(this)" id="Tepovanie manželských postelí"> 
+                <p>Tepovanie manželských postelí	</p>
+                <p>Od 25€</p>
+
+              </div>
+              <div class="item ks" onclick="toggleChoice(this)" id="Tepovanie rohovej lavice"> 
+                <p>Tepovanie rohovej lavice</p>
+                <p>	Od 15€</p>
+
+              </div>
+              <div class="item ks" onclick="toggleChoice(this)" id="Impregnácia"> 
+                <p>Impregnácia	</p>
+                <p>	Od 3€/miesto sedenia</p>
+
+              </div>
+            
+            </div>
+          
+        </div>
+  
+        <hr style="background-color: rgb(168, 168, 168); height: 3px; width: 100%; border: 0px; margin: 50px 0px;">
+
+          
+          <div class="tepovanie-section">
+            <div style=" justify-content: center; align-items: center; display: flex;"> 
+                <p style="font-size: 180%; color: rgb(179, 178, 178);">Cenník služieb - <br><b style="color: rgb(156, 8, 16);">Upratovanie</b></p>
+            </div>
+            <div style="min-width: 30%; display: flex; flex-direction: column;  margin: 0px 5px; justify-content: center; align-items: center;">
+              <div class="item" onclick="toggleChoice(this)"> 
+                <p>Tepovanie metrážnych kobercov</p>
+                <p>Od 2,5€/m2</p>
+              </div>
+              <div class="item" onclick="toggleChoice(this)"> 
+                <p>Tepovanie kusových kobercov	</p>
+                <p>Od 3€/m2</p>
+              </div>
+
+            </div>
+
+
+            <div  style=" min-width: 30%; display: flex; flex-direction: column;  margin: 0px 5px; justify-content: center; align-items: center;">
+              <div class="item" onclick="toggleChoice(this)"> 
+                <p>Tepovanie taburetiek	</p>
+                <p>Od 5€/ks</p>
+              </div>
+              <div class="item" onclick="toggleChoice(this)"> 
+                <p>Tepovanie stoličiek</p>
+                <p> 	Od 4€/ks</p>
+              </div>
+
+            
+            </div>
+
+        </div>
+          <a href="#contact" id="c-button" onclick="copyrequests()">Kontaktujte nás</a>
+
+
+        </div>
+      </div>
+
+
+
+      <section id="contact"></section>
+      <div class="contact-section load">
+        <h1 style=" border-bottom: 3px solid rgb(156, 8, 16); margin-bottom: 30px; font-weight: bolder;">------Kontakt------</h1>
+        <div class="co" >
+          <form  action="https://formspree.io/f/moqggnlo"  method="POST" class="form-big" >
+          <div class="form-container">
+           
+            <div class="user-info-container">
+              <input type="text" name="Meno" placeholder="Meno" class="form-input-box" required>
+              <input type="text" name="Telefón" placeholder="Telefón" class="form-input-box" required>
+              <input type="text" name="email" placeholder="email" class="form-input-box" required>
+       
+            </div>
+          <div class="message-container">
+            <textarea type="text" name="Meno" placeholder="Napíšte nám" class="form-message-box" id="requests" required></textarea>
+          </div>
+       
+        </div>
+        <button type="submit" style="background-color: rgb(156, 8, 16); color: white; max-width: 150px;" class="form-input-box"> Odoslať</button>
+        </form>
+        <div class="contact-info-container">
+          <h2 style="border-bottom: 3px solid rgb(172, 7, 7);">Kontaktné info</h2>
+          <p><b style="color: rgb(172, 7, 7);">Telefón:</b> +421907545190</p>
+          <p><b style="color: rgb(172, 7, 7);">Email:</b> patik@gmail.com</p>
+          <p><b style="color: rgb(172, 7, 7);">Facebook:</b> www.facebook.com</p>
+          <p><b style="color: rgb(172, 7, 7);">Kde nás nájdete:</b> Adresa(optional)</p>
+        </div>
+        
+      </div>
+      
+    
+
+      </div>
+
+</body>
+</html>
