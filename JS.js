@@ -39,10 +39,12 @@ function closeMenuBar(){
     var slideBar = document.getElementById('menu-bar');
     button.classList.remove('open');
     slideBar.classList.remove('active');
+    var nothing = document.getElementById('nothing');
+    nothing.classList.toggle('top');
 }
 
 
-window.addEventListener('resize', checkScreenWidth);
+
 
 function checkScreenWidth() {
     const screenWidth = window.innerWidth;
