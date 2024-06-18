@@ -24,9 +24,9 @@ function toggleMenu() {
     var slideBar = document.getElementById('menu-bar');
     slideBar.classList.toggle('active');
     if (slideBar.classList.contains('active')) {
-        slideBar.style.animation = 'slideIn 0.3s forwards';
+        slideBar.style.animation = 'slideIn 0.5s forwards';
     } else {
-        slideBar.style.animation = 'slideOut 0.3s forwards';
+        slideBar.style.animation = 'slideOut 0.5s forwards';
     }
     var nothing = document.getElementById('nothing');
     nothing.classList.toggle('top');
@@ -40,9 +40,14 @@ function closeMenuBar(){
     button.classList.remove('open');
     slideBar.classList.remove('active');
     var nothing = document.getElementById('nothing');
-    nothing.classList.toggle('top');
+    nothing.classList.remove('top');
+    const screenWidth = window.innerWidth;
+   
+
 }
 
+
+window.addEventListener('resize', closeMenuBar);
 
 
 
