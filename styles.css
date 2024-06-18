@@ -129,14 +129,11 @@ body{
 
 
 .menu-bar {
-  margin-top: 90px;
+  
   font-size: 100%;
   position: absolute;
-  margin-bottom: 40px;
-  width: 80%;
-  height: 80px;
-  margin: 90px 10%;
-  border-radius: 20px;
+  width: 100%;
+  height: 100%;
   background-color: rgb(33,37,41);
   color: #fff;
   display: none;
@@ -182,18 +179,13 @@ body{
 
 .nothing.top{
   position: fixed;
-  height:25vh;
+  height:15vh;
+  align-items: baseline;
 }
 
 .nothing.active{
   height: 100vh;
 
-}
-
-@media screen and (max-width: 1200px) {
-  .nothing{
-    height: 300px;
-  }
 }
 
 
@@ -253,7 +245,7 @@ body{
 
 @keyframes slideIn {
   from { transform: translate(0%, -500%); } /* Start from top */
-  to { transform: translate(0%, -100%); }
+  to { transform: translate(0%, 0%); }
 }
 
 @keyframes slideOut {
